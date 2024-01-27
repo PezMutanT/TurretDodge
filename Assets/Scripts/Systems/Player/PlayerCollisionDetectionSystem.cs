@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Systems
 {
-    [UpdateInGroup(typeof(LateSimulationSystemGroup), OrderLast = true)]
+    [UpdateInGroup(typeof(LateSimulationSystemGroup))]
     public partial struct PlayerCollisionDetectionSystem : ISystem
     {
         [BurstCompile]
