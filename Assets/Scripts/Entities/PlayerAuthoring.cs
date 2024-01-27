@@ -21,6 +21,11 @@ namespace Entities
                     Value = authoring.Speed
                 });
                 
+                AddComponent(entity, new PlayerHealthComponent
+                {
+                    Value = 100f
+                });
+                
                 /*AddComponent(entity, new CameraTargetTag());*/
             }
         }

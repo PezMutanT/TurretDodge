@@ -2,7 +2,6 @@
 using Components;
 using Unity.Burst;
 using Unity.Entities;
-using Unity.Mathematics;
 using Unity.Transforms;
 
 namespace Systems
@@ -44,6 +43,11 @@ namespace Systems
                             Direction = projectileSpawner.ProjectileDirection,
                             Speed = projectileSpawner.ProjectileSpeed,
                             Lifetime = 0f
+                        });
+                    ecb.AddComponent(newProjectileEntity,
+                        new PlayerDamagerComponent
+                        {
+                            DamageOnHit = 10f   //TODO
                         });
                 }
             }
