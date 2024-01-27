@@ -26,7 +26,7 @@ namespace Entities
                     Value = 100f
                 });
                 
-                /*AddComponent(entity, new CameraTargetTag());*/
+                AddComponent(entity, new CameraTargetTag());
             }
         }
     }
