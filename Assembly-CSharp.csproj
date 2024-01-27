@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileSpawningComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileInitializerComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerInputComponent.cs" />
+    <Compile Include="Assets\Scripts\Systems\Player\PlayerCollisionDetectionSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileSpawningTimerComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerMovementSystem.cs" />
     <Reference Include="UnityEngine">
