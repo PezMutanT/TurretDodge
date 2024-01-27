@@ -42,7 +42,8 @@ namespace Systems
                         new ProjectileMovementComponent
                         {
                             Direction = projectileSpawner.ProjectileDirection,
-                            Speed = projectileSpawner.ProjectileSpeed
+                            Speed = projectileSpawner.ProjectileSpeed,
+                            Lifetime = 0f
                         });
                 }
             }

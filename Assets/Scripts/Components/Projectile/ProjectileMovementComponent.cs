@@ -7,5 +7,6 @@ namespace Components
     {
         public float3 Direction;
         public float Speed;
+        public float Lifetime;
     }
 }
