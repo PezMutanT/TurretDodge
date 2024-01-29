@@ -1,11 +1,15 @@
-﻿using Aspects;
+﻿/*using Aspects;
 using Unity.Burst;
 using Unity.Entities;
+using Unity.Physics.Systems;
 using Unity.Transforms;
 
 namespace Systems
 {
-    [UpdateBefore(typeof(TransformSystemGroup))]
+    //[UpdateBefore(typeof(TransformSystemGroup))]
+    [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
+    [UpdateAfter(typeof(PhysicsSystemGroup))]
+    //[UpdateAfter(typeof(PlayerInputSystem))]
     public partial struct PlayerMovementSystem : ISystem
     {
         [BurstCompile]
@@ -28,4 +32,4 @@ namespace Systems
             }
         }
     }
-}
+}*/

@@ -5,7 +5,7 @@ using Unity.Entities;
 namespace Systems
 {
     [UpdateInGroup(typeof(LateSimulationSystemGroup))]
-    [UpdateAfter(typeof(PlayerCollisionDetectionSystem))]
+    //[UpdateAfter(typeof(PlayerCollisionDetectionSystem))]
     public partial struct PlayerDeathCheckingSystem : ISystem
     {
         [BurstCompile]

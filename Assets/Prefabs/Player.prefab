@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 457784294604997981}
   - component: {fileID: 1570529051290204388}
   - component: {fileID: 3898223427463621630}
-  - component: {fileID: 2933522631812403301}
   - component: {fileID: 7390193167790194623}
+  - component: {fileID: 902114742228658626}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -101,7 +101,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -109,19 +109,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &2933522631812403301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2750885500566421908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78834977738c4f9bb46e3afc60e9e2d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 100
 --- !u!54 &7390193167790194623
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -130,7 +117,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2750885500566421908}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -149,3 +136,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &902114742228658626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750885500566421908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c8994ae2e2a2843add19309c537623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gravity:
+    x: -0
+    y: -9.81
+    z: -0
+  MovementSpeed: 2.5
+  MaxMovementSpeed: 10
+  RotationSpeed: 2.5
+  JumpUpwardsSpeed: 5
+  MaxSlope: 60
+  MaxIterations: 10
+  CharacterMass: 1
+  SkinWidth: 0.02
+  ContactTolerance: 0.1
+  AffectsPhysicsBodies: 1
+  RaiseCollisionEvents: 0
+  RaiseTriggerEvents: 0

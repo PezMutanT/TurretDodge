@@ -5,7 +5,7 @@ using Unity.Transforms;
 
 namespace Systems
 {
-    [UpdateBefore(typeof(PlayerMovementSystem))]
+    //[UpdateBefore(typeof(PlayerMovementSystem))]
     public partial struct ProjectileMovingSystem : ISystem
     {
         [BurstCompile]

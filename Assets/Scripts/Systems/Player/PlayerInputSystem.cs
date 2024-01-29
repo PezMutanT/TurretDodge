@@ -1,4 +1,4 @@
-﻿using Unity.Entities;
+﻿/*using Unity.Entities;
 using UnityEngine;
 using Components;
 
@@ -42,4 +42,4 @@ namespace Systems
             });
         }
     }
-}
+}*/
