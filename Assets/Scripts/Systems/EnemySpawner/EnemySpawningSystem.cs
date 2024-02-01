@@ -32,7 +32,18 @@ namespace Systems
             var ecb = ecbSingleton.CreateCommandBuffer(state.WorldUnmanaged);
             var deltaTime = SystemAPI.Time.DeltaTime;
 
-            foreach (var enemySpawner in SystemAPI.Query<EnemySpawningAspect>())
+            foreach (var (enemySpawnerEnableTimer, enemySpawnerEnabled) in
+                     SystemAPI.Query<RefRW<EnableAfterSecondsComponent>, EnabledRefRW<EnableAfterSecondsComponent>>())
+            {
+                enemySpawnerEnableTimer.ValueRW.Value -= deltaTime;
+                if (enemySpawnerEnableTimer.ValueRO.Value <= 0f)
+                {
+                    enemySpawnerEnabled.ValueRW = false;
+                }
+            }
+
+            foreach (var enemySpawner in
+                     SystemAPI.Query<EnemySpawningAspect>().WithDisabled<EnableAfterSecondsComponent>())
             {
                 enemySpawner.SpawnTimer -= deltaTime;
                 if (enemySpawner.SpawnTimer <= 0f)

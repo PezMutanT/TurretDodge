@@ -7,6 +7,7 @@ namespace Entities
     public class EnemySpawnerAuthoring : MonoBehaviour
     {
         public GameObject EnemyPrefab;
+        public float SpawnInitialTimeAfterGameStart;
         public float SpawnRadius;
         public float SpawnFrequence;
         public int SpawnAmount;
@@ -27,6 +28,12 @@ namespace Entities
                 });
 
                 AddComponent(entity, new PlayerPositionComponent());
+                
+                AddComponent(entity, new EnableAfterSecondsComponent
+                {
+                    Value = authoring.SpawnInitialTimeAfterGameStart
+                });
+                SetComponentEnabled<EnableAfterSecondsComponent>(true);
             }
         }
 
