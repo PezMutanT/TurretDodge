@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\Components\Camera\CameraTargetTag.cs" />
     <Compile Include="Assets\Scripts\Systems\Enemy\EnemyMovementSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerCollisionDetectionSystem.cs" />
+    <Compile Include="Assets\Scripts\Aspects\Enemy\EnemyMovementAspect.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileSpawningTimerComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerMovementSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Enemy\EnemyMovementComponent.cs" />

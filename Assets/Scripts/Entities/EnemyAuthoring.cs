@@ -7,6 +7,8 @@ namespace Entities
     public class EnemyAuthoring : MonoBehaviour
     {
         public float Speed;
+        public float DamageOnHit;
+        public float DamageRadius;
         
         private class EnemyAuthoringBaker : Baker<EnemyAuthoring>
         {
@@ -17,6 +19,14 @@ namespace Entities
                 AddComponent(entity, new EnemyMovementComponent
                 {
                     Speed = authoring.Speed
+                });
+
+                AddComponent(entity, new PlayerPositionComponent());
+                
+                AddComponent(entity, new PlayerDamagerComponent
+                {
+                    DamageOnHit = authoring.DamageOnHit,
+                    DamageRadiusSquared = authoring.DamageRadius * authoring.DamageRadius
                 });
             }
         }

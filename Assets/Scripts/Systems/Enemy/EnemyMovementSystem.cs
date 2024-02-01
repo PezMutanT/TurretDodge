@@ -1,7 +1,7 @@
-﻿using Components;
+﻿using Aspects;
+using Components;
 using Unity.Burst;
 using Unity.Entities;
-using Unity.Transforms;
 
 namespace Systems
 {
@@ -22,10 +22,10 @@ namespace Systems
         public void OnUpdate(ref SystemState state)
         {
             var deltaTime = SystemAPI.Time.DeltaTime;
-            foreach (var (transform, enemy) in
-                     SystemAPI.Query<RefRW<LocalTransform>, RefRO<EnemyMovementComponent>>())
+            foreach (var enemy in
+                     SystemAPI.Query<EnemyMovementAspect>())
             {
-                transform.ValueRW.Position += transform.ValueRO.Forward() * enemy.ValueRO.Speed * deltaTime;
+                enemy.MoveForward(deltaTime);
             }
         }
     }

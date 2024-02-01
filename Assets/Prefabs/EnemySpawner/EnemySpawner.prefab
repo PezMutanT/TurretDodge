@@ -49,4 +49,4 @@ MonoBehaviour:
   SpawnInitialTimeAfterGameStart: 1
   SpawnRadius: 30
   SpawnFrequence: 1
-  SpawnAmount: 10
+  SpawnAmount: 20
