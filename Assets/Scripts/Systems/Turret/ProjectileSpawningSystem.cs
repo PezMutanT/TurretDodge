@@ -6,7 +6,7 @@ using Unity.Transforms;
 
 namespace Systems
 {
-    [UpdateInGroup(typeof(TransformSystemGroup), OrderLast = true)]
+    [UpdateInGroup(typeof(InitializationSystemGroup), OrderLast = true)]
     public partial struct ProjectileSpawningSystem : ISystem
     {
         [BurstCompile]
@@ -33,9 +33,11 @@ namespace Systems
                     projectileSpawner.SpawnProjectileTimer = projectileSpawner.SpawnProjectileFrequency;
 
                     var newProjectileEntity = ecb.Instantiate(projectileSpawner.ProjectilePrefab);
+                    
                     ecb.SetComponent(
                         newProjectileEntity,
                         LocalTransform.FromPosition(projectileSpawner.ProjectileSpawnPosition));
+                    
                     ecb.AddComponent(
                         newProjectileEntity,
                         new ProjectileMovementComponent
@@ -44,6 +46,7 @@ namespace Systems
                             Speed = projectileSpawner.ProjectileSpeed,
                             Lifetime = 0f
                         });
+                    
                     ecb.AddComponent(newProjectileEntity,
                         new PlayerDamagerComponent
                         {

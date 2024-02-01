@@ -5,11 +5,12 @@ using Unity.Transforms;
 
 namespace Systems
 {
-    public partial struct ProjectileMovingSystem : ISystem
+    public partial struct EnemyMovementSystem : ISystem
     {
         [BurstCompile]
         public void OnCreate(ref SystemState state)
         {
+            state.RequireForUpdate<EnemyMovementComponent>();
         }
 
         [BurstCompile]
@@ -21,11 +22,10 @@ namespace Systems
         public void OnUpdate(ref SystemState state)
         {
             var deltaTime = SystemAPI.Time.DeltaTime;
-            foreach (var (transform, projectileMovement) in
-                     SystemAPI.Query<RefRW<LocalTransform>, RefRO<ProjectileMovementComponent>>())
+            foreach (var (transform, enemy) in
+                     SystemAPI.Query<RefRW<LocalTransform>, RefRO<EnemyMovementComponent>>())
             {
-                transform.ValueRW.Position +=
-                    projectileMovement.ValueRO.Direction * projectileMovement.ValueRO.Speed * deltaTime;
+                transform.ValueRW.Position += transform.ValueRO.Forward() * enemy.ValueRO.Speed * deltaTime;
             }
         }
     }

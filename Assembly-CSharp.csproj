@@ -57,13 +57,17 @@
     <Analyzer Include="C:\projects\TurretDodge\Library\PackageCache\com.unity.entities@1.0.16\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.JobEntityGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Components\Player\PlayerPositionComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Projectile\ProjectileMovementComponent.cs" />
     <Compile Include="Assets\Scripts\Aspects\Turret\ProjectileSpawningAspect.cs" />
+    <Compile Include="Assets\Scripts\Entities\EnemySpawnerAuthoring.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerInputSystem.cs" />
+    <Compile Include="Assets\Scripts\Aspects\EnemySpawner\EnemySpawningAspect.cs" />
     <Compile Include="Assets\Scripts\Entities\FollowEntity.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerHealthComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerDeathCheckingSystem.cs" />
+    <Compile Include="Assets\Scripts\Entities\EnemyAuthoring.cs" />
     <Compile Include="Assets\Scripts\Systems\Turret\ProjectileSpawningSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerInitializerSystem.cs" />
     <Compile Include="Assets\Input\InputActions.cs" />
@@ -71,17 +75,22 @@
     <Compile Include="Assets\Scripts\Components\Player\PlayerSpeed.cs" />
     <Compile Include="Assets\Scripts\Aspects\Player\PlayerMovementAspect.cs" />
     <Compile Include="Assets\Scripts\Entities\TurretAuthoring.cs" />
+    <Compile Include="Assets\Scripts\Systems\Player\PlayerPositionUpdatingSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\EnemySpawner\EnemySpawningSystem.cs" />
     <Compile Include="Assets\Scripts\Entities\PlayerAuthoring.cs" />
     <Compile Include="Assets\Scripts\Systems\Projectile\ProjectileMovingSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerTag.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileSpawningComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileInitializerComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerInputComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\EnemySpawner\EnemySpawningComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\Projectile\ProjectileSelfKillingSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Camera\CameraTargetTag.cs" />
+    <Compile Include="Assets\Scripts\Systems\Enemy\EnemyMovementSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerCollisionDetectionSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileSpawningTimerComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerMovementSystem.cs" />
+    <Compile Include="Assets\Scripts\Components\Enemy\EnemyMovementComponent.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
