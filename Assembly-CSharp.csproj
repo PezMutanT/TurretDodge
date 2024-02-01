@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Components\Player\PlayerHealthComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerDeathCheckingSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Turret\ProjectileSpawningSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Player\PlayerInitializerSystem.cs" />
     <Compile Include="Assets\Input\InputActions.cs" />
     <Compile Include="Assets\Scripts\Components\Projectile\PlayerDamagerComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerSpeed.cs" />

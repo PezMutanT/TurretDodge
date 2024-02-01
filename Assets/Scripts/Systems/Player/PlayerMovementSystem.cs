@@ -1,11 +1,10 @@
 ﻿using Aspects;
 using Unity.Burst;
 using Unity.Entities;
-using Unity.Transforms;
 
 namespace Systems
 {
-    [UpdateBefore(typeof(TransformSystemGroup))]
+    [UpdateInGroup(typeof(FixedStepSimulationSystemGroup), OrderFirst = true)]
     public partial struct PlayerMovementSystem : ISystem
     {
         [BurstCompile]
@@ -21,7 +20,7 @@ namespace Systems
         [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
-            float deltaTime = SystemAPI.Time.DeltaTime;
+            float deltaTime = SystemAPI.Time.fixedDeltaTime;
             foreach (var player in SystemAPI.Query<PlayerMovementAspect>())
             {
                 player.MoveFromInput(deltaTime);

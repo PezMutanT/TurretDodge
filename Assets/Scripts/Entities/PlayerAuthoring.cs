@@ -7,6 +7,7 @@ namespace Entities
     public class PlayerAuthoring : MonoBehaviour
     {
         public float Speed;
+        public int MaxHealth;
         
         private class PlayerAuthoringBaker : Baker<PlayerAuthoring>
         {
@@ -23,7 +24,7 @@ namespace Entities
                 
                 AddComponent(entity, new PlayerHealthComponent
                 {
-                    Value = 100f
+                    Value = authoring.MaxHealth
                 });
                 
                 AddComponent(entity, new CameraTargetTag());

@@ -139,7 +139,12 @@ PrefabInstance:
     - target: {fileID: 2933522631812403301, guid: 7d42874a63ba54e4f95195e2e5815975,
         type: 3}
       propertyPath: Speed
-      value: 5
+      value: 126.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933522631812403301, guid: 7d42874a63ba54e4f95195e2e5815975,
+        type: 3}
+      propertyPath: MaxHealth
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4662428822713915893, guid: 7d42874a63ba54e4f95195e2e5815975,
         type: 3}
@@ -193,7 +198,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7390193167790194623, guid: 7d42874a63ba54e4f95195e2e5815975,
         type: 3}
+      propertyPath: m_Mass
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390193167790194623, guid: 7d42874a63ba54e4f95195e2e5815975,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390193167790194623, guid: 7d42874a63ba54e4f95195e2e5815975,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390193167790194623, guid: 7d42874a63ba54e4f95195e2e5815975,
+        type: 3}
+      propertyPath: m_ImplicitCom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390193167790194623, guid: 7d42874a63ba54e4f95195e2e5815975,
+        type: 3}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390193167790194623, guid: 7d42874a63ba54e4f95195e2e5815975,
+        type: 3}
+      propertyPath: m_ImplicitTensor
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
