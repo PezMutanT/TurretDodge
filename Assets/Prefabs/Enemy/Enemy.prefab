@@ -123,3 +123,4 @@ MonoBehaviour:
   Speed: 4
   DamageOnHit: 10
   DamageRadius: 1.5
+  RefocusPlayerFrequence: 1

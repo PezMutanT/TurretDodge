@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Components\Projectile\ProjectileMovementComponent.cs" />
     <Compile Include="Assets\Scripts\Aspects\Turret\ProjectileSpawningAspect.cs" />
     <Compile Include="Assets\Scripts\Components\EnemySpawner\EnableAfterSecondsComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\Enemy\RefocusPlayerTimerComponent.cs" />
     <Compile Include="Assets\Scripts\Entities\EnemySpawnerAuthoring.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerInputSystem.cs" />

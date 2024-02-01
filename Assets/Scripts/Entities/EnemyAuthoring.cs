@@ -9,6 +9,7 @@ namespace Entities
         public float Speed;
         public float DamageOnHit;
         public float DamageRadius;
+        public float RefocusPlayerFrequence;
         
         private class EnemyAuthoringBaker : Baker<EnemyAuthoring>
         {
@@ -18,10 +19,16 @@ namespace Entities
 
                 AddComponent(entity, new EnemyMovementComponent
                 {
-                    Speed = authoring.Speed
+                    Speed = authoring.Speed,
+                    RefocusPlayerFrequence = authoring.RefocusPlayerFrequence
                 });
 
                 AddComponent(entity, new PlayerPositionComponent());
+
+                AddComponent(entity, new RefocusPlayerTimerComponent
+                {
+                    Value = authoring.RefocusPlayerFrequence
+                });
                 
                 AddComponent(entity, new PlayerDamagerComponent
                 {

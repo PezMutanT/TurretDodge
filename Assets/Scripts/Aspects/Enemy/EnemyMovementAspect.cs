@@ -10,6 +10,7 @@ namespace Aspects
         private readonly RefRW<LocalTransform> _localTransform;
         private readonly RefRO<EnemyMovementComponent> _enemyMovementComponent;
         private readonly RefRO<PlayerPositionComponent> _playerPositionComponent;
+        private readonly RefRW<RefocusPlayerTimerComponent> _refocusPlayerTimerComponent;
         private readonly RefRO<PlayerDamagerComponent> _playerDamagerComponent;
 
         public float3 Position
@@ -20,6 +21,15 @@ namespace Aspects
 
         public void MoveForward(float deltaTime)
         {
+            var newRotation = _localTransform.ValueRO.Rotation;
+            _refocusPlayerTimerComponent.ValueRW.Value -= deltaTime;
+            if (_refocusPlayerTimerComponent.ValueRO.Value < 0f)
+            {
+                _refocusPlayerTimerComponent.ValueRW.Value = _enemyMovementComponent.ValueRO.RefocusPlayerFrequence;
+                
+                newRotation = quaternion.LookRotation((_playerPositionComponent.ValueRO.Value - Position), math.up());
+            }
+
             var newPosition =
                 _localTransform.ValueRW.Position +
                 _localTransform.ValueRO.Forward() * _enemyMovementComponent.ValueRO.Speed * deltaTime;
@@ -30,7 +40,7 @@ namespace Aspects
                 return;
             }
             
-            _localTransform.ValueRW.Position = newPosition;
+            _localTransform.ValueRW = LocalTransform.FromPositionRotation(newPosition, newRotation);
         }
     }
 }
