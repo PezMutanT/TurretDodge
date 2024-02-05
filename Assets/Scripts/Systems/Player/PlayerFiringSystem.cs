@@ -45,8 +45,8 @@ namespace Systems
                         new ProjectileMovementComponent
                         {
                             Direction = playerFiringAspect.PlayerDirection,
-                            Speed = 10f,
-                            Lifetime = 1f
+                            Speed = 50f,
+                            Lifetime = 0.2f
                         });
                     
                     ecb.AddComponent(newProjectileEntity,

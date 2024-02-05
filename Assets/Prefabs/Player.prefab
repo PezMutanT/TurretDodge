@@ -125,7 +125,7 @@ MonoBehaviour:
   Speed: 130
   MaxHealth: 1000
   DamagePerSecond: 500
-  FireRate: 1.5
+  FireRate: 1
   PlayerProjectilePrefab: {fileID: 3991983145387744493, guid: a833a7a2050e32a4c9be8ef8c5b27481,
     type: 3}
 --- !u!54 &7390193167790194623
