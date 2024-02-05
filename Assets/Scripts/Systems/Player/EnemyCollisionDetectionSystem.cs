@@ -58,7 +58,7 @@ namespace Systems
             bool isEnemyEntityB = EnemyHealthLookup.HasComponent(triggerEvent.EntityB);
             if (!isEnemyEntityA && !isEnemyEntityB)
             {
-                Debug.LogError($"Trigger event after two non-player entities collided.");
+                // Debug.LogError($"Trigger event after two non-player entities collided.");
                 return;
             }
 

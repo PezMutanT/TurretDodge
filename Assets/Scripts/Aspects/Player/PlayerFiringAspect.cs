@@ -21,7 +21,7 @@ namespace Aspects
         }
 
         public float FireRate => _playerFiringComponent.ValueRO.FireRate;
-        public float3 FirePosition => _localTransform.ValueRO.Position + _localTransform.ValueRO.Forward() * 1f;      //TODO
+        public float3 FirePosition => _localTransform.ValueRO.Position + _localTransform.ValueRO.Forward() * 1.5f;      //TODO - make it a GameObject's transform inside prefab
 
         public float DamagePerSecond => _playerFiringComponent.ValueRO.DamagePerSecond;
         public float3 PlayerDirection => _localTransform.ValueRO.Forward();

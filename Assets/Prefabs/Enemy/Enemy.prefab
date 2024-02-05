@@ -125,7 +125,7 @@ MonoBehaviour:
   DamageOnHit: 10
   DamageRadius: 1.5
   RefocusPlayerFrequence: 1
-  MaxHealth: 30
+  MaxHealth: 1
 --- !u!54 &7927135438698451204
 Rigidbody:
   m_ObjectHideFlags: 0

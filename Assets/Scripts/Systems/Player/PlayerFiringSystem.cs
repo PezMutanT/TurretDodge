@@ -54,6 +54,12 @@ namespace Systems
                         {
                             DamagePerSecond = playerFiringAspect.DamagePerSecond
                         });
+                    
+                    ecb.AddComponent(newProjectileEntity,
+                        new ParticleSystemComponent
+                        {
+                            Direction = playerFiringAspect.PlayerDirection
+                        });
                 }
             }
         }
