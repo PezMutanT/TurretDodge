@@ -33,7 +33,7 @@ namespace Entities
                 {
                     Value = authoring.SpawnInitialTimeAfterGameStart
                 });
-                SetComponentEnabled<EnableAfterSecondsComponent>(true);
+                SetComponentEnabled<EnableAfterSecondsComponent>(entity, true);
             }
         }
 
