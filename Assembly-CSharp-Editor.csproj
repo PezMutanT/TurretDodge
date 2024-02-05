@@ -745,6 +745,9 @@
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>C:\projects\TurretDodge\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>C:\projects\TurretDodge\Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>C:\projects\TurretDodge\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
@@ -811,6 +814,9 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:\projects\TurretDodge\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>C:\projects\TurretDodge\Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:\projects\TurretDodge\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -846,6 +852,9 @@
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>C:\projects\TurretDodge\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>C:\projects\TurretDodge\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:\projects\TurretDodge\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
