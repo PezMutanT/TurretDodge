@@ -25,8 +25,8 @@ namespace Systems
             foreach (var (projectile, entity) in
                      SystemAPI.Query<RefRW<ProjectileMovementComponent>>().WithEntityAccess())
             {
-                projectile.ValueRW.Lifetime += deltaTime;
-                if (projectile.ValueRO.Lifetime >= 10f)
+                projectile.ValueRW.Lifetime -= deltaTime;
+                if (projectile.ValueRO.Lifetime <= 0f)
                 {
                     ecb.DestroyEntity(entity);
                 }

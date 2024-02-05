@@ -44,7 +44,7 @@ namespace Systems
                         {
                             Direction = projectileSpawner.ProjectileDirection,
                             Speed = projectileSpawner.ProjectileSpeed,
-                            Lifetime = 0f
+                            Lifetime = 10f
                         });
                     
                     ecb.AddComponent(newProjectileEntity,
