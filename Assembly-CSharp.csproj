@@ -68,8 +68,8 @@
     <Compile Include="Assets\Scripts\Aspects\EnemySpawner\EnemySpawningAspect.cs" />
     <Compile Include="Assets\Scripts\Entities\FollowEntity.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerHealthComponent.cs" />
-    <Compile Include="Assets\Scripts\Systems\Player\PlayerDeathCheckingSystem.cs" />
     <Compile Include="Assets\Scripts\Entities\EnemyAuthoring.cs" />
+    <Compile Include="Assets\Scripts\Systems\Player\PlayerDeathCheckingSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Turret\ProjectileSpawningSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerInitializerSystem.cs" />
     <Compile Include="Assets\Input\InputActions.cs" />

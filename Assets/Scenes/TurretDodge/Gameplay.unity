@@ -217,7 +217,7 @@ PrefabInstance:
     - target: {fileID: 2933522631812403301, guid: 7d42874a63ba54e4f95195e2e5815975,
         type: 3}
       propertyPath: Speed
-      value: 126.7
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 2933522631812403301, guid: 7d42874a63ba54e4f95195e2e5815975,
         type: 3}
@@ -650,6 +650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemySpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947209338690892918, guid: 3885f7031c7788e4ea409fe86b818c2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2632738594111930606, guid: 3885f7031c7788e4ea409fe86b818c2f,
         type: 3}
