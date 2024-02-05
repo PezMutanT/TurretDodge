@@ -50,7 +50,7 @@ namespace Systems
                     ecb.AddComponent(newProjectileEntity,
                         new PlayerDamagerComponent
                         {
-                            DamageOnHit = 10f   //TODO
+                            DamageOnHit = 10f   //TODO - edit in inspector
                         });
                 }
             }

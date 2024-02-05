@@ -13,7 +13,9 @@ namespace Systems
         [BurstCompile]
         public void OnCreate(ref SystemState state)
         {
-            
+            state.RequireForUpdate<SimulationSingleton>();
+            state.RequireForUpdate<PlayerHealthComponent>();
+            state.RequireForUpdate<PlayerDamagerComponent>();
         }
 
         [BurstCompile]
