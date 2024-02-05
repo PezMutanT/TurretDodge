@@ -8,7 +8,10 @@ namespace Entities
     {
         public float Speed;
         public int MaxHealth;
-        
+        public float DamagePerSecond;
+        public float FireRate;
+        public GameObject PlayerProjectilePrefab;
+
         private class PlayerAuthoringBaker : Baker<PlayerAuthoring>
         {
             public override void Bake(PlayerAuthoring authoring)
@@ -28,6 +31,14 @@ namespace Entities
                 });
                 
                 AddComponent(entity, new CameraTargetTag());
+
+                AddComponent(entity, new PlayerFiringComponent
+                {
+                    PlayerProjectilePrefab = GetEntity(authoring.PlayerProjectilePrefab, TransformUsageFlags.Dynamic),
+                    FireRate = authoring.FireRate,
+                    DamagePerSecond = authoring.DamagePerSecond,
+                    Timer = authoring.FireRate
+                });
             }
         }
     }

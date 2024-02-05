@@ -59,12 +59,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Components\Player\PlayerPositionComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Projectile\ProjectileMovementComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\Enemy\EnemyHealthComponent.cs" />
     <Compile Include="Assets\Scripts\Aspects\Turret\ProjectileSpawningAspect.cs" />
     <Compile Include="Assets\Scripts\Components\EnemySpawner\EnableAfterSecondsComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Enemy\RefocusPlayerTimerComponent.cs" />
+    <Compile Include="Assets\Scripts\Systems\Player\PlayerFiringSystem.cs" />
     <Compile Include="Assets\Scripts\Entities\EnemySpawnerAuthoring.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerInputSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Enemy\EnemyDeathCheckingSystem.cs" />
     <Compile Include="Assets\Scripts\Aspects\EnemySpawner\EnemySpawningAspect.cs" />
     <Compile Include="Assets\Scripts\Entities\FollowEntity.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerHealthComponent.cs" />
@@ -84,18 +87,22 @@
     <Compile Include="Assets\Scripts\Systems\Projectile\ProjectileMovingSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerTag.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileSpawningComponent.cs" />
+    <Compile Include="Assets\Scripts\Components\Player\PlayerFiringComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileInitializerComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerInputComponent.cs" />
     <Compile Include="Assets\Scripts\Components\EnemySpawner\EnemySpawningComponent.cs" />
+    <Compile Include="Assets\Scripts\Aspects\Player\PlayerFiringAspect.cs" />
     <Compile Include="Assets\Scripts\Systems\Projectile\ProjectileSelfKillingSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Camera\CameraTargetTag.cs" />
     <Compile Include="Assets\Scripts\Systems\Enemy\EnemyMovementSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerCollisionDetectionSystem.cs" />
     <Compile Include="Assets\Scripts\Aspects\Enemy\EnemyMovementAspect.cs" />
     <Compile Include="Assets\Scripts\Aspects\Enemy\EnemyDamageAspect.cs" />
+    <Compile Include="Assets\Scripts\Components\Player\EnemyDamagerComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileSpawningTimerComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerMovementSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Enemy\EnemyMovementComponent.cs" />
+    <Compile Include="Assets\Scripts\Systems\Player\EnemyCollisionDetectionSystem.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

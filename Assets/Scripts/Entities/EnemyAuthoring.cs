@@ -10,7 +10,8 @@ namespace Entities
         public float DamageOnHit;
         public float DamageRadius;
         public float RefocusPlayerFrequence;
-        
+        public float MaxHealth;
+
         private class EnemyAuthoringBaker : Baker<EnemyAuthoring>
         {
             public override void Bake(EnemyAuthoring authoring)
@@ -34,6 +35,11 @@ namespace Entities
                 {
                     DamageOnHit = authoring.DamageOnHit,
                     DamageRadiusSquared = authoring.DamageRadius * authoring.DamageRadius
+                });
+
+                AddComponent(entity, new EnemyHealthComponent
+                {
+                    Value = authoring.MaxHealth
                 });
             }
         }

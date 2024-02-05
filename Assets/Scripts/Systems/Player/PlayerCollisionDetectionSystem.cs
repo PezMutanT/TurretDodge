@@ -54,7 +54,7 @@ namespace Systems
             bool isPlayerEntityB = PlayerHealthLookup.HasComponent(triggerEvent.EntityB);
             if (!isPlayerEntityA && !isPlayerEntityB)
             {
-                Debug.LogError($"Trigger event after two non-player entities collided.");
+                //Debug.LogError($"Trigger event after two non-player entities collided.");
                 return;
             }
 
@@ -68,7 +68,7 @@ namespace Systems
             
             if (!PlayerDamagerLookup.HasComponent(damagerEntity))
             {
-                Debug.LogWarning($"Trigger event after player collided with non-damageable entity.");   //TODO - remove when considered appropriate
+                Debug.LogWarning($"Trigger event after player collided with non-damager entity.");   //TODO - remove when considered appropriate
                 return;
             }
 
