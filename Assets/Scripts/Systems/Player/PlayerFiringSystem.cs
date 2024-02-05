@@ -7,6 +7,8 @@ using Unity.Transforms;
 
 namespace Systems
 {
+    [UpdateInGroup(typeof(InitializationSystemGroup))]
+    [UpdateBefore(typeof(ProjectileSpawningSystem))]
     public partial struct PlayerFiringSystem : ISystem
     {
         [BurstCompile]
@@ -42,7 +44,7 @@ namespace Systems
                         newProjectileEntity,
                         new ProjectileMovementComponent
                         {
-                            Direction = math.forward(),     //TODO
+                            Direction = playerFiringAspect.PlayerDirection,
                             Speed = 10f,
                             Lifetime = 1f
                         });

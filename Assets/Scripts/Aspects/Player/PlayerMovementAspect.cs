@@ -3,6 +3,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
+using UnityEngine;
 
 namespace Aspects
 {
@@ -17,15 +18,22 @@ namespace Aspects
 
         public void MoveFromInput(float deltaTime)
         {
-            float3 newVelocity = new float3(
+            float3 direction = new float3(
                 _playerInput.ValueRO.PlayerDirection.x,
                 0f,
                 _playerInput.ValueRO.PlayerDirection.y);
             
             // _physicsVelocity.ValueRW.ApplyLinearImpulse(_physicsMass.ValueRO, newVelocity * _playerSpeed.ValueRO.Value);
-            _physicsVelocity.ValueRW.Linear = newVelocity * _playerSpeed.ValueRO.Value * deltaTime;
+            _physicsVelocity.ValueRW.Linear = direction * _playerSpeed.ValueRO.Value * deltaTime;
             /*_localTransform.ValueRW.Position =
                 _localTransform.ValueRO.Position + newVelocity * _playerSpeed.ValueRO.Value * deltaTime;*/
+
+            if (direction.Equals(float3.zero))
+            {
+                return;
+            }
+            
+            _localTransform.ValueRW.Rotation = quaternion.LookRotation(direction, math.up());
         }
     }
 }

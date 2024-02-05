@@ -6,7 +6,7 @@ using Unity.Transforms;
 
 namespace Systems
 {
-    [UpdateInGroup(typeof(InitializationSystemGroup), OrderLast = true)]
+    [UpdateInGroup(typeof(InitializationSystemGroup))]
     public partial struct ProjectileSpawningSystem : ISystem
     {
         [BurstCompile]

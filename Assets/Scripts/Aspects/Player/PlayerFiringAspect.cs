@@ -21,11 +21,9 @@ namespace Aspects
         }
 
         public float FireRate => _playerFiringComponent.ValueRO.FireRate;
-        public float3 FirePosition => new float3(
-            _localTransform.ValueRO.Position.x,
-            _localTransform.ValueRO.Position.y,
-            _localTransform.ValueRO.Position.z + 1f);      //TODO
+        public float3 FirePosition => _localTransform.ValueRO.Position + _localTransform.ValueRO.Forward() * 1f;      //TODO
 
         public float DamagePerSecond => _playerFiringComponent.ValueRO.DamagePerSecond;
+        public float3 PlayerDirection => _localTransform.ValueRO.Forward();
     }
 }
