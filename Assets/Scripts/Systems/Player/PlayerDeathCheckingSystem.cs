@@ -27,7 +27,9 @@ namespace Systems
             {
                 if (playerHealth.Value <= 0)
                 {
-                    ecb.DestroyEntity(entity);
+                    ecb.AddComponent(entity, typeof(DeadPlayer));
+                    state.Enabled = false;
+                    // ecb.DestroyEntity(entity);
                 }
             }
         }

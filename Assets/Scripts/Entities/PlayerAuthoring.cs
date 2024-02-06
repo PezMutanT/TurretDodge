@@ -1,6 +1,9 @@
 ﻿using Unity.Entities;
 using UnityEngine;
 using Components;
+using Unity.Scenes;
+using UnityEditor;
+using Hash128 = Unity.Entities.Hash128;
 
 namespace Entities
 {
@@ -11,6 +14,7 @@ namespace Entities
         public float DamagePerSecond;
         public float FireRate;
         public GameObject PlayerProjectilePrefab;
+        public UnityEditor.SceneAsset Subscene;
 
         private class PlayerAuthoringBaker : Baker<PlayerAuthoring>
         {
@@ -38,6 +42,16 @@ namespace Entities
                     FireRate = authoring.FireRate,
                     DamagePerSecond = authoring.DamagePerSecond,
                     Timer = authoring.FireRate
+                });
+
+                
+                
+                //TODO - move to other entity
+                var path = AssetDatabase.GetAssetPath(authoring.Subscene);
+                var guid = AssetDatabase.GUIDFromAssetPath(path);
+                AddComponent(entity, new SceneLoaderComponent
+                {
+                    SceneGUID = guid
                 });
             }
         }

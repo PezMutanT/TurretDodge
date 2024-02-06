@@ -52,7 +52,7 @@ namespace Systems
         
         public void Execute(TriggerEvent triggerEvent)
         {
-            Debug.Log($"Trigger event: {triggerEvent.EntityA} and {triggerEvent.EntityB}");
+            // Debug.Log($"Trigger event: {triggerEvent.EntityA} and {triggerEvent.EntityB}");
             
             bool isEnemyEntityA = EnemyHealthLookup.HasComponent(triggerEvent.EntityA);
             bool isEnemyEntityB = EnemyHealthLookup.HasComponent(triggerEvent.EntityB);

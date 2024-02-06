@@ -219,6 +219,16 @@ PrefabInstance:
       propertyPath: FireRate
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2933522631812403301, guid: 7d42874a63ba54e4f95195e2e5815975,
+        type: 3}
+      propertyPath: MaxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933522631812403301, guid: 7d42874a63ba54e4f95195e2e5815975,
+        type: 3}
+      propertyPath: SceneGUID
+      value: 12300000000000000000000000000000
+      objectReference: {fileID: 0}
     - target: {fileID: 4662428822713915893, guid: 7d42874a63ba54e4f95195e2e5815975,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -639,7 +649,7 @@ PrefabInstance:
     - target: {fileID: 2632738594111930606, guid: 3885f7031c7788e4ea409fe86b818c2f,
         type: 3}
       propertyPath: SpawnFrequence
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8163484036014814753, guid: 3885f7031c7788e4ea409fe86b818c2f,
         type: 3}
