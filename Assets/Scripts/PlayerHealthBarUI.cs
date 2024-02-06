@@ -35,9 +35,15 @@ namespace UserInterface
             {
                 typeof(PlayerHealthComponent)
             });
-            
-            _playerHealth = entityQuery.GetSingleton<PlayerHealthComponent>();
-            _maxHealth = _playerHealth.Value;
+
+            if (entityQuery.TryGetSingleton<PlayerHealthComponent>(out _playerHealth))
+            {
+                _maxHealth = _playerHealth.Value;
+            }
+            else
+            {
+                Debug.LogError($"Error accessing singleton PlayerHealthComponent");
+            }
         }
 
         public void RefreshHealthValue(float newHealth)
