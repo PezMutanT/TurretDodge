@@ -66,12 +66,17 @@ PrefabInstance:
     - target: {fileID: 6144051894403819717, guid: 881dd37a19317714c80724b5f38e8b96,
         type: 3}
       propertyPath: Speed
-      value: 3
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 6144051894403819717, guid: 881dd37a19317714c80724b5f38e8b96,
         type: 3}
       propertyPath: DamageRadius
-      value: 3
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144051894403819717, guid: 881dd37a19317714c80724b5f38e8b96,
+        type: 3}
+      propertyPath: DamagePerSecond
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8365760617536799635, guid: 881dd37a19317714c80724b5f38e8b96,
         type: 3}

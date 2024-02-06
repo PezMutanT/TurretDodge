@@ -121,11 +121,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3888a5e2ddf448bfa774f754658b8875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  DamageOnHit: 10
+  Speed: 100
+  DamagePerSecond: 5
   DamageRadius: 1.5
   RefocusPlayerFrequence: 1
-  MaxHealth: 1
+  MaxHealth: 0.1
 --- !u!54 &7927135438698451204
 Rigidbody:
   m_ObjectHideFlags: 0

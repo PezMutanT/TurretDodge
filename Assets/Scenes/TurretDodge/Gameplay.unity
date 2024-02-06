@@ -183,8 +183,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6008515310226111605, guid: 5fa7f26bc3f96484ea465dd3c60bd076,
         type: 3}
+      propertyPath: SpawnFrequence
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008515310226111605, guid: 5fa7f26bc3f96484ea465dd3c60bd076,
+        type: 3}
       propertyPath: SpawnInitialTimeAfterGameStart
-      value: 5
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7849270066351393005, guid: 5fa7f26bc3f96484ea465dd3c60bd076,
         type: 3}
@@ -194,7 +199,7 @@ PrefabInstance:
     - target: {fileID: 7849270066351393005, guid: 5fa7f26bc3f96484ea465dd3c60bd076,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -598,6 +603,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6008515310226111605, guid: 54d1857a4a50b7b48802276b601eb227,
+        type: 3}
+      propertyPath: SpawnFrequence
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008515310226111605, guid: 54d1857a4a50b7b48802276b601eb227,
+        type: 3}
+      propertyPath: SpawnInitialTimeAfterGameStart
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 7849270066351393005, guid: 54d1857a4a50b7b48802276b601eb227,
         type: 3}
       propertyPath: m_Name
@@ -606,7 +621,7 @@ PrefabInstance:
     - target: {fileID: 7849270066351393005, guid: 54d1857a4a50b7b48802276b601eb227,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -639,7 +654,7 @@ PrefabInstance:
     - target: {fileID: 2632738594111930606, guid: 3885f7031c7788e4ea409fe86b818c2f,
         type: 3}
       propertyPath: SpawnFrequence
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8163484036014814753, guid: 3885f7031c7788e4ea409fe86b818c2f,
         type: 3}

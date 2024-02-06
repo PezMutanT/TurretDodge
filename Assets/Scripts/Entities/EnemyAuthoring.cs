@@ -7,7 +7,7 @@ namespace Entities
     public class EnemyAuthoring : MonoBehaviour
     {
         public float Speed;
-        public float DamageOnHit;
+        public float DamagePerSecond;
         public float DamageRadius;
         public float RefocusPlayerFrequence;
         public float MaxHealth;
@@ -33,7 +33,7 @@ namespace Entities
                 
                 AddComponent(entity, new PlayerDamagerComponent
                 {
-                    DamageOnHit = authoring.DamageOnHit,
+                    DamagePerSecond = authoring.DamagePerSecond,
                     DamageRadiusSquared = authoring.DamageRadius * authoring.DamageRadius
                 });
 

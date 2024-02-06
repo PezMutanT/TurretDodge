@@ -66,12 +66,27 @@ PrefabInstance:
     - target: {fileID: 6144051894403819717, guid: 881dd37a19317714c80724b5f38e8b96,
         type: 3}
       propertyPath: Speed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144051894403819717, guid: 881dd37a19317714c80724b5f38e8b96,
+        type: 3}
+      propertyPath: MaxHealth
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6144051894403819717, guid: 881dd37a19317714c80724b5f38e8b96,
         type: 3}
       propertyPath: DamageRadius
-      value: 4
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144051894403819717, guid: 881dd37a19317714c80724b5f38e8b96,
+        type: 3}
+      propertyPath: DamagePerSecond
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144051894403819717, guid: 881dd37a19317714c80724b5f38e8b96,
+        type: 3}
+      propertyPath: RefocusPlayerFrequence
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8365760617536799635, guid: 881dd37a19317714c80724b5f38e8b96,
         type: 3}

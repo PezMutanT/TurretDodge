@@ -73,7 +73,7 @@ namespace Systems
             }
 
             var playerDamagerComponent = PlayerDamagerLookup[damagerEntity];
-            PlayerHealthLookup.GetRefRW(playerEntity).ValueRW.Value -= playerDamagerComponent.DamageOnHit;
+            PlayerHealthLookup.GetRefRW(playerEntity).ValueRW.Value -= playerDamagerComponent.DamagePerSecond;
 
             /*ECB.SetComponent(playerEntity, new PlayerHealthComponent
             {

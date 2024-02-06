@@ -31,7 +31,7 @@ namespace Systems
             {
                 if (enemy.HasToDamagePlayer(deltaTime))
                 {
-                    playerHealthLookup.GetRefRW(playerEntity).ValueRW.Value -= (enemy.DamageOnHit * deltaTime);
+                    playerHealthLookup.GetRefRW(playerEntity).ValueRW.Value -= enemy.DamagePerSecond * deltaTime;
                 }
             }
         }

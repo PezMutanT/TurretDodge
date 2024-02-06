@@ -4,7 +4,7 @@ namespace Components
 {
     public struct PlayerDamagerComponent : IComponentData
     {
-        public float DamageOnHit;
+        public float DamagePerSecond;
         public float DamageRadiusSquared;
     }
 }

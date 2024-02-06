@@ -47,7 +47,7 @@ namespace Aspects
             //_localTransform.ValueRW = LocalTransform.FromPositionRotation(newPosition, newRotation);
 
             var newVelocity = _localTransform.ValueRO.Forward();
-            _physicsVelocity.ValueRW.Linear = newVelocity * /*_enemyMovementComponent.ValueRO.Speed*/130f * deltaTime;
+            _physicsVelocity.ValueRW.Linear = newVelocity * _enemyMovementComponent.ValueRO.Speed * deltaTime;
         }
     }
 }

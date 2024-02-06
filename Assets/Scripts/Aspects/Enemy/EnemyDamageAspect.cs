@@ -12,7 +12,7 @@ namespace Aspects
         private readonly RefRO<PlayerPositionComponent> _playerPositionComponent;
         private readonly RefRO<PlayerDamagerComponent> _playerDamagerComponent;
 
-        public float DamageOnHit => _playerDamagerComponent.ValueRO.DamageOnHit;
+        public float DamagePerSecond => _playerDamagerComponent.ValueRO.DamagePerSecond;
 
         public bool HasToDamagePlayer(float deltaTime)
         {
