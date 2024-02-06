@@ -24,7 +24,7 @@ namespace Entities
                     SpawnRadius = authoring.SpawnRadius,
                     SpawnFrequence = authoring.SpawnFrequence,
                     SpawnAmount = authoring.SpawnAmount,
-                    SpawnTimer = authoring.SpawnFrequence
+                    SpawnTimer = 0f
                 });
 
                 AddComponent(entity, new PlayerPositionComponent());
