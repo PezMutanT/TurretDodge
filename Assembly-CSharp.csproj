@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Components\Projectile\ProjectileMovementComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Enemy\EnemyHealthComponent.cs" />
     <Compile Include="Assets\Scripts\Aspects\Turret\ProjectileSpawningAspect.cs" />
+    <Compile Include="Assets\Scripts\Systems\Player\PlayerHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Components\EnemySpawner\EnableAfterSecondsComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Enemy\RefocusPlayerTimerComponent.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerFiringSystem.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Scripts\Systems\Player\PlayerInitializerSystem.cs" />
     <Compile Include="Assets\Input\InputActions.cs" />
     <Compile Include="Assets\Scripts\Components\Projectile\PlayerDamagerComponent.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealthBarUI.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerSpeed.cs" />
     <Compile Include="Assets\Scripts\Aspects\Player\PlayerMovementAspect.cs" />
     <Compile Include="Assets\Scripts\Entities\TurretAuthoring.cs" />

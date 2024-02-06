@@ -639,7 +639,7 @@ PrefabInstance:
     - target: {fileID: 2632738594111930606, guid: 3885f7031c7788e4ea409fe86b818c2f,
         type: 3}
       propertyPath: SpawnFrequence
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8163484036014814753, guid: 3885f7031c7788e4ea409fe86b818c2f,
         type: 3}
