@@ -48,7 +48,7 @@ namespace Systems
         
         public void Execute(TriggerEvent triggerEvent)
         {
-            Debug.Log($"Trigger event: {triggerEvent.EntityA} and {triggerEvent.EntityB}");
+            // Debug.Log($"Trigger event: {triggerEvent.EntityA} and {triggerEvent.EntityB}");
             
             bool isPlayerEntityA = PlayerHealthLookup.HasComponent(triggerEvent.EntityA);
             bool isPlayerEntityB = PlayerHealthLookup.HasComponent(triggerEvent.EntityB);
