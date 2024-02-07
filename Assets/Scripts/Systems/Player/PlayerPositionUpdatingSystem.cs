@@ -6,7 +6,7 @@ using Unity.Transforms;
 namespace Systems
 {
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
-    [UpdateAfter(typeof(PlayerMovementSystem))]
+    [UpdateAfter(typeof(EnemyMovementSystem))]
     public partial struct PlayerPositionUpdatingSystem : ISystem
     {
         [BurstCompile]

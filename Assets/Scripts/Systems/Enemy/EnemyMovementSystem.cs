@@ -5,6 +5,8 @@ using Unity.Entities;
 
 namespace Systems
 {
+    [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
+    [UpdateAfter(typeof(PlayerMovementSystem))]
     public partial struct EnemyMovementSystem : ISystem
     {
         [BurstCompile]
@@ -21,7 +23,7 @@ namespace Systems
         [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
-            var deltaTime = SystemAPI.Time.DeltaTime;
+            var deltaTime = SystemAPI.Time.fixedDeltaTime;
             foreach (var enemy in
                      SystemAPI.Query<EnemyMovementAspect>())
             {
