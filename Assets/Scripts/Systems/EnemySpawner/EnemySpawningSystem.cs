@@ -67,6 +67,8 @@ namespace Systems
                         ecb.SetComponent(
                             newEntity,
                             LocalTransform.FromPositionRotation(newEnemyPosition, enemyRotation));
+                        
+                        ecb.AddComponent<EnemyInitializationComponent>(newEntity);
                     }
 
                     newEntityArray.Dispose();

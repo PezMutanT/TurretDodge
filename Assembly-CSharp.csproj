@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\PlayerHealthBarUI.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerSpeed.cs" />
     <Compile Include="Assets\Scripts\Aspects\Player\PlayerMovementAspect.cs" />
+    <Compile Include="Assets\Scripts\Components\Enemy\EnemyInitializationComponent.cs" />
     <Compile Include="Assets\Scripts\Entities\TurretAuthoring.cs" />
     <Compile Include="Assets\Scripts\Systems\Player\PlayerPositionUpdatingSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\EnemySpawner\EnemySpawningSystem.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Scripts\Entities\PlayerAuthoring.cs" />
     <Compile Include="Assets\Scripts\Systems\Projectile\ProjectileMovingSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerTag.cs" />
+    <Compile Include="Assets\Scripts\Systems\Enemy\EnemyInitializerSystem.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileSpawningComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Player\PlayerFiringComponent.cs" />
     <Compile Include="Assets\Scripts\Components\Turret\ProjectileInitializerComponent.cs" />
